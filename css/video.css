@@ -1,0 +1,12 @@
+.infoVideos{
+	width: 70%;
+	height: 80%;
+	background: transparent;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	padding: 20px;
+	font-size: 1.5em;
+	text-align: justify;
+	overflow: hidden;
+}

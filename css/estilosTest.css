@@ -1,0 +1,116 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	background: rgba(0,0,0,0.5);
+}
+
+.questions
+{
+	height: 90vh;
+	width: 100%;
+	margin-bottom: 10px;
+
+}
+
+.question
+{
+	float: left;
+	height: 400px;
+	width: calc(100% - 300px);
+	
+}
+
+.questionField
+{
+	float: left;
+	height: 30px;
+	width: calc(100% - 20px);
+	border-radius: 20px;
+	padding: 5px;
+	margin-bottom: 5px;
+	background: white !important;
+	color: black !important;
+}
+
+.answerField
+{
+	float: left;
+	height: 30px;
+	width: calc(80% - 20px);
+	border-radius: 20px;
+	padding: 5px;
+	margin-bottom: 5px;
+	background: white !important;
+	color: black !important;
+}
+
+.radioAns
+{
+	float: left;
+	width: 15%;
+	height: 50px;
+}
+
+.btnsControl
+{
+	float: left;
+	height: 200px;
+	width: 300px;
+	margin-bottom: 10px;
+}
+
+.btnsControl > button
+{
+	height: 80px;
+	width: 80px;
+	margin-top: 60px;
+	margin-left: 45px;
+	border-radius: 20px;
+}
+
+.toolsArea
+{
+	height: 10vh;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+	float: left;
+}
+
+.btnSave
+{
+	height: 80%;
+	width: 250px;
+	color: white;
+	background: rgba(0,0,0,0.8);
+	text-align: center;
+	border-radius: 30px;
+	float: right;
+	margin-right: 25px;
+}
+
+.testArea
+{
+	height: calc(90vh - 40px);
+	width: calc(100% - 40px);
+	padding: 20px;
+}
+
+.testArea > *
+{
+	color: white;
+}
+
+.toolsArea > button
+{
+	height: 80%;
+	width: 200px;
+	border-radius: 25px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+}

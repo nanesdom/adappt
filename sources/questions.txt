@@ -1,0 +1,26 @@
+Escribe Rojo
+ROJO
+Escribe Verde
+VERDE
+Escribe Naranja
+NARANJA
+Escribe Amarillo
+AMARILLO
+Escribe Morado
+MORADO
+Escribe Blanco
+BLANCO
+Escribe Negro
+NEGRO
+Escribe Cafe
+CAFE
+Escribe Rosa
+ROSA
+hola
+HOLA
+hola2
+HOLA
+hola2
+HOLA
+hola3
+HOLA

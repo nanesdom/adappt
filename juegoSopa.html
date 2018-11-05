@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SocialApp</title>	
+	<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="js/funciones.js"></script>
+	<link rel="icon" type="image/png" href="media/logo.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="media/logo.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="media/logo.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="media/logo.png">
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'self'; 
+		script-src 'self' 'unsafe-inline'; 
+		style-src 'self' ; 
+		img-src *; 
+		font-src *;
+		connect-src *
+	">
+	<link rel="stylesheet" type="text/css" href="css/estilosSopa.css">
+	<script src="js/funcionesSopa.js"></script>
+	<script src="js/load.js"></script>
+</head>
+<body onload="getContent4(), load()">
+	<div id="mensaje"></div>
+	<div id="mensaje2"></div>
+
+	<div class="cont" id="contIndex">
+		<header>
+			<img src="media/logo.png"> <b>SocialApp</b>	
+			
+			<b class="right" onclick="salir()">Salir</b> 		
+			<b class="right" onclick="ir('dashboard.html')">Mis Cursos</b> 		
+
+		</header>
+		<div class="presentacion">
+			<img src="media/fondo.jpg" class="imgFondo">
+			<div class="filter"></div>
+			<section class="perfil">
+				<input type="file" name="" placeholder="Imagen" class="signup" id="file" accept="image/*" onchange="cambiarImg()" disabled="">
+				<label for="file" id="label" disabled=""><img src="media/perfil.jpg" id="imgPerfil"> <h6 id="btnImg">Cambiar Imagen</h6></label>
+				
+				<input type="text" name="" value="Daniel Dominguez" id="name" disabled="">
+				<b>Edad </b><input type="number" name="" value="21" disabled="" id="edad">
+				<b>Email </b><input type="email" name="" value="juandanieldomsan.nan@gmail.com" disabled="" id="correo">	
+				<button class="btn1" id="editPerfil" onclick="openPop('savePerfil', 'editPerfil'), editarPerfil()">Editar Perfil</button>			
+				<button class="btn2" id="savePerfil" onclick="openPop('editPerfil', 'savePerfil'), guardarPerfil()">Guardar</button>
+			</section>
+		</div>
+		<div class="cursos">
+			<h1>Sopa de Letras</h1>
+			<div class="imgs">
+				
+				<!-- aqui se carga el contenido del juego -->
+				<div class="gameArea">
+					<div class="sopaArea">
+						<div class="gridSopa" id="grid">
+							
+						</div>
+					</div>
+					<div class="questionArea" id="quest">
+						<h1>Palabras</h1><br><br>
+					</div>
+				</div>
+				<div class="toolsArea">
+					<button class="btnVerif" onclick="checkAns()">Verificar</button>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

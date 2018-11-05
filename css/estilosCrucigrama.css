@@ -1,0 +1,104 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.gameArea
+{
+	height: calc(90vh - 20px);
+	width: calc(100% - 20px);
+	background: transparent;
+	text-align: center;
+	padding: 10px;
+}
+
+.toolsArea
+{
+	height: 10vh;
+	width: 100%;
+	background: transparent;
+}
+
+.cruciArea
+{
+	float: left;
+	height: 100%;
+	width: 70%;
+	background: transparent;
+}
+
+.questionArea
+{
+	float: left;
+	height: calc(100% - 40px);
+	width: calc(30% - 20px);
+	background: transparent;
+	overflow-y: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+.gridCruc
+{
+	margin-top: 20px;
+	margin-left: calc(50% - 40vh);
+	height: 80vh;
+	width: 80vh;
+}
+
+.charCruci
+{
+	float: left;
+	height: calc((80vh / 11) - 2px);
+	width: calc((80vh / 11) - 2px);
+	margin-right: 3.5px !important;
+	margin-bottom: 3.5px !important;
+	background: white !important;
+	color: black !important;
+	line-height: calc((80vh / 11) - 2px);
+	text-align: center;
+	text-transform: uppercase;
+	border: solid 1px !important;
+	font-size: 1.2em !important;
+	margin-left: 0px !important;
+	margin-top: 0px !important;  
+}
+
+.charCruciB
+{
+	float: left;
+	height: calc((80vh / 11) - 2px);
+	width: calc((80vh / 11) - 2px);
+	margin-right: 3.5px !important;
+	margin-bottom: 3.5px !important;
+	background: white !important;
+	line-height: calc((80vh / 11) - 2px);
+	text-align: center;
+	text-transform: uppercase;
+	color: black !important;
+	border: solid 1px !important;
+	font-size: 1.2em !important;
+	margin-left: 0px !important;
+	margin-top: 0px !important;  
+}
+
+.btnVerif
+{
+	height: 80%;
+	width: 250px;
+	text-align: center;
+	border-radius: 30px;
+	float: right;
+	margin-right: 25px;
+}
+
+.questionArea > textarea
+{
+	height: 30%;
+	width: 60%;
+	padding: 15px;
+}

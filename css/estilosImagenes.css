@@ -1,0 +1,163 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+img
+{
+	height: 100%;
+	width: 100%;
+}
+
+.gameArea
+{
+	height: 100%;
+	width: 100%;
+	background: grey;
+	text-align: center;
+}
+
+.gameArea>h1
+{
+	line-height: 40vh;
+}
+
+.question
+{
+	height: 80px;
+	width: 100%;
+	color: white;
+	font-size: 1.7em;
+	line-height: 80px;
+	text-align: center;
+}
+
+.options
+{
+	height: calc(100% - 120px);
+	width: calc(100% - 40px);
+	padding: 20px;
+}
+
+.opt
+{
+	float: left;
+	height: calc(100% - 50px);
+	margin-top: 10px;
+	width: calc(50% - 90px);
+	margin-left: 40px;
+	border-radius: 20px;
+	padding: 15px;
+	background: rgba(0,0,0,0.5);
+}
+
+.opt:hover
+{
+	background: white;
+}
+
+.questions
+{
+	height: calc(90vh - 20px);
+	width: calc(100% - 20px);
+	padding: 10px;
+}
+
+.question2
+{
+	height: calc(22% - 30px);
+	width: calc(100% - 20px);
+	padding: 10px;
+	background: rgba(0,0,0,0.5);
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.imgResp
+{
+	height: 100%;
+	width: 165px;
+	background: green;
+	float: left;
+	margin-left: 5px;
+	color: white;
+}
+
+.preg
+{
+	float: left;
+	width: 25%;
+	margin-right: 15px;
+}
+
+.preg > input
+{
+	height: 30px;
+	width: calc(100% - 20px);
+	border-radius: 5px;
+	padding-right: 10px;
+	padding-left: 10px; 
+}
+
+.preg
+{
+	color: white !important;
+}
+
+.btnSubir
+{
+	float: left;
+	margin-left: 15px;
+}
+
+.btnSubir > input
+{
+	margin: 0px !important;
+	font-size: 1.2em;
+}
+
+.btnSubir > button
+{
+	margin: 0px !important;
+	height: 20px !important;
+	width: 100px !important;
+	font-size: 1.2em !important;
+	float: left;
+}
+
+.radioBtn
+{
+	float: left;
+	height: 30px;
+	width: 30px;
+	margin-right: 85px !important;
+	margin-left: 85px !important;
+	margin-bottom: 10px !important;
+	margin-top: 0px !important;
+	font-size: 1.2em !important;
+}
+
+.optArea
+{
+	float: left;
+	height: 100%;
+	width: 20%;
+}
+
+.toolsArea
+{
+	height: 10vh;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	text-align: center;
+}
+
+.toolsArea > button
+{
+	height: 80%;
+	width: 200px;
+	border-radius: 25px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+}

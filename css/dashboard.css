@@ -1,0 +1,175 @@
+.cursos{
+	width: calc(70% );
+	height: 80%;
+	position: absolute;
+	left: 30%;
+	top: 10%;
+	text-align: center;
+	background: transparent;
+	overflow: hidden;
+}
+
+.cursos h1{
+	font-size: 4em;
+	margin: 20px;
+	color: var(--color-fondo);
+	font-weight: lighter;	
+	height: 15%;
+}
+
+.cursos h3{
+	font-size: 2vw;
+	color: var(--color-contraste);
+	font-weight: lighter;	
+	text-transform: capitalize;
+}
+
+.lista{
+	width: 100%;
+	height: 80%;
+	overflow-y: auto;
+}
+
+.curso{
+	width: 95%;
+	height: 100px;
+	background: var(--color-fondo);
+	font-size: 2em;
+	line-height: 100px;
+	text-align: left;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-weight: lighter;
+	display: inline-flex;
+	margin-top: 20px;	
+}
+.curso h3{
+	font-weight: lighter;
+	color: var(--color-medio);
+	width: 60%;
+	height: 100%;
+}
+
+.curso select{
+	background: transparent !important;
+	border: none !important;
+	width: 18% !important;
+	height: 90% !important;
+	border-bottom: 1px solid var(--color-fuerte) !important;
+	font-size: 1em !important;
+	text-align: center !important;
+	color: black !important;
+	margin: 0px !important;
+}
+
+.curso button{
+	width: 20%;
+	margin-left: 2%;
+	height: 80px !important;
+	margin-top: 10px !important;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	font-size: 2.5vw !important;
+	font-weight: lighter;
+}
+
+.perfil{
+	position: fixed;
+	left: 50px;
+	top: 15%;
+	height: 70%;
+	width: 25%;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+}
+
+.perfil input{
+	background: transparent;
+	border: none;
+	width: 100%;
+	height: 50px;
+	color: white;
+	font-size: .8em;
+	text-align: center;
+}
+
+.perfil b{
+	width: 30%;
+	height: 50px;
+	font-weight: lighter;
+	color: var(--color-contraste2);
+}
+.perfil #name{
+	width: 100%;
+	height: 50px;
+	font-size: 1.5vw;
+	color: var(--color-contraste);
+	text-transform: capitalize;
+}
+
+.perfil img{
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	text-align: center;
+	margin: 20px;
+	align-self: center;
+}
+
+.perfil button{
+	width: 100%;
+	height: 50px;
+	outline: none;
+	border: none;
+	margin-top: 20px;
+	font-size: .8em;
+}
+
+.perfil #correo{
+	font-size: 1.5vw;
+}
+
+.curso button:hover{
+	background: var(--color-contraste2);
+	color: white;
+}
+
+.perfil #editPerfil{
+	z-index: 1;
+	opacity: 1;
+	display: all;
+}
+.perfil #savePerfil{
+	z-index: 0;
+	opacity: 0;
+	display: none;
+		
+}
+
+.perfil button:hover{
+	background: var(--color-contraste2);
+	color: white;
+}
+
+.perfil h6{
+	font-weight: lighter;
+	font-style: italic;
+	margin-top: -20px;
+	display: none;
+	cursor: pointer;
+	font-size: 1vw;
+}
+
+.perfil h6:hover{
+	color: var(--color-contraste2);
+}
+
+#step2, #step3, #step4, #step5{
+	display: none;
+}
+.add{
+	width: 100% !important;
+	height: 100% !important;
+}

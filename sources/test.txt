@@ -1,0 +1,16 @@
+Color Rojo
+rojo
+verde
+azul
+0
+Color Azul
+Verde
+rojo
+azul
+2
+Color naranja
+rojo
+naranja
+verde
+2
+

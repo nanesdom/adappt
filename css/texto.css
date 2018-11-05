@@ -1,0 +1,38 @@
+.temas{
+	width: 20%;
+	height: 80%;
+	padding-top:  50px;
+	color: white;
+	font-size: 1.2em;
+	background: var(--color-fondo);
+	color: var(--color-fuerte);
+	padding-bottom: 50px;
+	position: absolute;
+	top: 20%;
+	left: 0px;
+}
+
+.temas h3{
+	margin-top: 30px;
+}
+
+.temas b{
+	color: var(--color-contraste2);
+}
+
+.infoTemas{
+	width: 70%;
+	height: 80%;
+	background: var(--color-fondo);
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	padding: 20px;
+	font-size: 1.5em;
+	text-align: justify;
+	overflow-y: auto;
+}
+
+.temas h3:hover{
+	color: var(--color-medio);
+}

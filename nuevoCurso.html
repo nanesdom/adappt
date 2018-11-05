@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SocialApp</title>	
+	<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="js/funciones.js"></script>
+	<script src="js/load.js"></script>
+	<link rel="icon" type="image/png" href="media/logo.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="media/logo.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="media/logo.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="media/logo.png">
+
+	<script src="js/funcionesAhorcado.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilosCrucigrama.css">
+	<script src="js/funcionesCrucigrama.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilosSopa.css">
+	<script src="js/funcionesSopa.js"></script>
+</head>
+<body onload="load(), loadSet()">
+	<div id="mensaje"></div>
+	<div id="mensaje2"></div>
+
+	<div class="cont" id="contIndex">
+		<header>
+			<img src="media/logo.png"> <b>SocialApp</b>	
+			<b class="right" onclick="salir()">Salir</b> 		
+
+		</header>
+		<div class="presentacion">
+			<img src="media/fondo.jpg" class="imgFondo">
+			<div class="filter"></div>
+			<section class="perfil">
+				<input type="file" name="" placeholder="Imagen" class="signup" id="file" accept="image/*" onchange="cambiarImg()" disabled="">
+				<label for="file" id="label" disabled=""><img src="media/perfil.jpg" id="imgPerfil"> <h6 id="btnImg">Cambiar Imagen</h6></label>
+				
+				<input type="text" name="" value="Daniel Dominguez" id="name" disabled="">
+				<b>Edad </b><input type="number" name="" value="21" disabled="" id="edad">
+				<b>Email </b><input type="email" name="" value="juandanieldomsan.nan@gmail.com" disabled="" id="correo">	
+				<button class="btn1" id="editPerfil" onclick="openPop('savePerfil', 'editPerfil'), editarPerfil()">Editar Perfil</button>			
+				<button class="btn2" id="savePerfil" onclick="openPop('editPerfil', 'savePerfil'), guardarPerfil()">Guardar</button>
+			</section>
+		</div>
+		<div class="cursos">
+			
+			<div class="add" id="step1">
+			<h1>Agregar Curso</h1>	
+					<h3>Nombre: </h3>
+						<input type="text" name="" class="large" placeholder="Nombre"><br>	<br>	
+						<h3>Definiciones</h3>
+						<textarea class="large" placeholder="Definicion 1"></textarea>
+						<textarea class="large" placeholder="Definicion 2"></textarea>
+						<textarea class="large" placeholder="Definicion 3"></textarea><br>	<br>
+
+						<h3>PDF</h3><br>	<br>	
+						<input type="file" name="" placeholder="Imagen 1" class="medium"><br>
+						<input type="file" name="" placeholder="Imagen 1" class="medium"><br>
+						<input type="file" name="" placeholder="Imagen 1" class="medium"><br>
+						<input type="file" name="" placeholder="Imagen 1" class="medium"><br>	<br>	
+						<h3>Imágenes</h3><br>	<br>	
+						<input type="file" name="" placeholder="Imagen 1" class="medium"><br>
+						<input type="file" name="" placeholder="Imagen 1" class="medium"><br>
+						<input type="file" name="" placeholder="Imagen 1" class="medium"><br>
+						<input type="file" name="" placeholder="Imagen 1" class="medium"><br>	<br>	
+						<h3>Video</h3>
+						<input type="text" name="" class="large" placeholder="Inserta el Link del video"><br>	<br>
+						<button class="large btn3" onclick="siguiente('step1', 'step2')">Siguiente</button>											
+			</div>	
+			<div class="add" id="step2">	
+				<h1>Agregar TEST</h1>
+					<h3>Pregunta 1</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1">
+						<input type="text" name="" class="medium" placeholder="Opcion 2">
+						<input type="text" name="" class="medium" placeholder="Opcion 3 (Buena)">
+					<h3>Pregunta 2</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1">
+						<input type="text" name="" class="medium" placeholder="Opcion 2 (Buena)">
+						<input type="text" name="" class="medium" placeholder="Opcion 3">
+					<h3>Pregunta 3</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1 (Buena)">
+						<input type="text" name="" class="medium" placeholder="Opcion 2">
+						<input type="text" name="" class="medium" placeholder="Opcion 3">
+					<h3>Pregunta 4</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1">
+						<input type="text" name="" class="medium" placeholder="Opcion 2">
+						<input type="text" name="" class="medium" placeholder="Opcion 3 (Buena)">
+					<h3>Pregunta 5</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1 (Buena)">
+						<input type="text" name="" class="medium" placeholder="Opcion 2">
+						<input type="text" name="" class="medium" placeholder="Opcion 3">
+					<h3>Pregunta 6</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1">
+						<input type="text" name="" class="medium" placeholder="Opcion 2 (Buena)">
+						<input type="text" name="" class="medium" placeholder="Opcion 3">
+					<h3>Pregunta 7</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1">
+						<input type="text" name="" class="medium" placeholder="Opcion 2">
+						<input type="text" name="" class="medium" placeholder="Opcion 3 (Buena)">
+					<h3>Pregunta 8</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1">
+						<input type="text" name="" class="medium" placeholder="Opcion 2 (Buena)">
+						<input type="text" name="" class="medium" placeholder="Opcion 3">
+					<h3>Pregunta 9</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1">
+						<input type="text" name="" class="medium" placeholder="Opcion 2 (Buena)">
+						<input type="text" name="" class="medium" placeholder="Opcion 3">
+					<h3>Pregunta 10</h3>
+						<input type="text" name="" class="large" placeholder="Pregunta">
+						<input type="text" name="" class="medium" placeholder="Opcion 1 (Buena)">
+						<input type="text" name="" class="medium" placeholder="Opcion 2">
+						<input type="text" name="" class="medium" placeholder="Opcion 3">
+					<button class="large btn3" onclick="siguiente('step2', 'step3')">Siguiente</button>		
+
+			</div>	
+			<div class="add" id="step3">
+			<h1>Agregar Ahorcado</h1>	
+					<h3>Agregar Pregunta</h3>
+					<input type="text" id="newPregunta" placeholder="Pregunta">
+					<h3>Respuesta</h3>
+					<input type="text" id="newRespuesta" placeholder="Respuesta"><br>
+					<button onclick="newQuestion(), loadSet(), verMensaje4('Pregunta agregada con Éxito!')" class="btn1 short">Agregar</button>
+					<h3>Eliminar Pregunta</h3>
+					<select id="preguntas"></select>		
+					</select><br>
+					<button onclick="deleteQuestion()" class="btn1 short">Eliminar</button><br>
+					
+					<button class="large btn3" onclick="siguiente('step3', 'step4')">Siguiente</button>		
+			</div>	
+
+			<div class="add" id="step4">
+			<h1>Agregar Crucigrama</h1>	
+					<div class="gameArea">
+						<div class="cruciArea">
+							<div class="gridCruc">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+								<input type="text" maxlength="1" class="charCruci" name="charSet">
+							</div>
+						</div>
+						<div class="questionArea">
+							<h2>Verticales</h2><br>
+							<textarea id="vert"></textarea>
+							<br><br>
+							<h2>Horizontales</h2><br>
+							<textarea id="hori"></textarea>
+						</div>
+					</div>
+					<div class="toolsArea">
+						<button class="btnVerif btn2" onclick="saveCrucigrama()">Aceptar</button>
+						<button class="btnVerif btn1" onclick="vaciar()">Vaciar</button>
+					</div>
+
+					<button class="large btn3" onclick="siguiente('step4', 'step5')">Siguiente</button>	
+			</div>	
+
+			<div class="add" id="step5">	
+				<h1>Agregar Sopa de Letras</h1>
+					<div class="gameArea">
+						<div class="sopaArea">
+							<div class="gridSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+								<input type="text" maxlength="1" class="charSopa">
+							</div>
+						</div>
+						<div class="questionArea">
+							<h2>Palabras</h2>
+							<textarea id="words"></textarea>
+						</div>
+					</div>
+					<div class="toolsArea">
+						<button class="btnVerif btn2" onclick="saveSopa()">Finalizar</button>
+						<button class="btnVerif btn1" onclick="vaciar()">Vaciar</button>
+					</div>	
+				<button class="large btn3" onclick="">Agregar Curso</button>	
+
+			</div>	
+
+
+
+
+			
+	</div>
+</body>
+</html>

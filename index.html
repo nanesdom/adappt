@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SocialApp</title>	
+	<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script src="js/load.js"></script>
+	<script src="js/funciones.js"></script>
+	<script src="js/login.js"></script>
+	<link rel="icon" type="image/png" href="media/logo.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="media/logo.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="media/logo.png" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" href="media/logo.png">
+	<meta http-equiv="Content-Security-Policy" content="
+		default-src 'self'; 
+		script-src 'self' 'unsafe-inline'; 
+		style-src 'self' ; 
+		img-src *; 
+		font-src *;
+		connect-src *
+	">
+</head>
+<body onload="per(), loadPage()">
+	<div id="mensaje"></div>
+	<div id="mensaje2"></div>
+
+	<div class="cont" id="contIndex">
+		<div class="presentacion">
+			<img src="media/fondo.jpg" class="imgFondo">
+			<div class="filter"></div>
+			<section class="text">
+				<img src="media/logo.png" class="logo">
+				<h3>SocialApp te ayuda a aprender de la manera que más te guste. <br><br>
+					Escoge la forma en la que aprenderás. 
+				</h3>
+
+				<h1>
+					¡Únete y Aprende!
+				</h1>
+			</section>
+		</div>
+
+		<div class="logsig">
+
+			<section class="login logsin" id="login">
+				<h3>Iniciar Sesión</h3>
+				<input type="email" name="" id="username" placeholder="Correo">
+				<input type="password" name="" id="password" placeholder="Contraseña">
+				<h3>&nbsp</h3>
+			</section>
+
+			<section class="signup logsin" id="signup">
+				<h3>Registrarme</h3>
+				<input type="text" name="" id="name" placeholder="Nombre">
+				<input type="email" name="" id="correo" placeholder="Correo">
+				<input type="password" name="" id="pass" placeholder="Contraseña">
+				<input type="password" name="" id="pass2" placeholder="Confirmar Contraseña">
+			</section>
+			<section class="btnLog btnLogSig" id="btnlogin">
+				<button class="btn1" onclick="entrar()">Iniciar Sesión</button>
+				<button class="btn2" onclick="openPop('signup', 'login'), openPop('btnsignup', 'btnlogin')">Registrarme</button>
+			</section>
+			<section class="btnSign btnLogSig" id="btnsignup">
+				<button class="btn1" onclick="registrarme()">Registrarme</button>
+				<button class="btn2" onclick="openPop('login', 'signup'), openPop('btnlogin', 'btnsignup')">Ya tengo una cuenta</button>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

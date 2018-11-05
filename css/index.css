@@ -1,0 +1,182 @@
+.imgFondo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.filter{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: var(--color-fuerte);
+  opacity: .65;
+}
+
+.presentacion{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.logsig{
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  right: 50px;
+  top: 0px;
+}
+
+.logsin{
+  width: 100%;
+  height: 50%;
+  left: 0px;
+  top: 17%;
+  position: absolute;
+  background: var(--color-fondo);
+  z-index: 10000000000000000000;
+
+  display: flex;
+  flex-wrap: wrap;
+   align-items: center;
+}
+
+.login{
+  z-index: 1;
+  opacity: 1;
+}
+
+.signup{
+  z-index: 0;
+  opacity: 0;
+}
+
+.logsin h3{
+  font-size: 3em;
+  text-align: center;
+  margin: 15px;
+  color: var(--color-medio);
+  width: 90%;
+  font-weight: lighter;
+}
+
+.login input[type="text"], .login input[type="password"], .login input[type="email"]{
+  height: 15%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-fuerte);
+  outline: none;
+  font-size: 1.2em; 
+}
+
+.signup input[type="text"], .signup input[type="password"], .signup input[type="email"]{
+  height: 15%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-fuerte);
+  outline: none;
+  font-size: 1.2em; 
+}
+
+.btnLogSig{
+  width: 100%;
+  height: calc(100% - 67% - 30px - 17%);
+  position: absolute;
+  left: 0px;
+  top: calc(67% + 30px);
+}
+
+.btnLogSig button{
+  width: 100%;
+  height: 40%;
+  margin-top: 5%;
+  outline: none;
+  border: none;
+  font-size: 1.7em;
+}
+
+.btnsign{
+  z-index: 0;
+  opacity: 0;
+}
+
+.btnLog{
+  z-index: 999;
+  opacity: 999;
+}
+
+.btn1{
+  background: var(--color-medio);
+  color: white;
+
+}
+
+.btn3{
+  background: var(--color-contraste2);
+  color: white;
+
+}
+.btn2{
+  background: var(--color-contraste);
+  color: var(--color-fuerte);
+}
+
+.btnLogSig button:hover{
+  background: var(--color-contraste2);
+  color: white;
+}
+
+.presentacion .text{
+  position: absolute;
+  left: 50px;
+  top: 17%;
+  width: calc(100% - 30% - 100px);
+  height: calc(100% - 34%);
+  color: white;
+  text-align: center;
+}
+
+.presentacion h3{
+  margin-right: 50px;
+  text-align: justify;
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.presentacion h1{
+  margin: 20px;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: lighter;
+  color: var(--color-contraste);
+  color: var(--color-contraste2)
+}
+
+.presentacion .logo{
+  width: 300px;
+  height: 300px;
+}
+
+.btn2:hover{
+  background: white;
+  color: black;
+}
+
+.btn3:hover{
+  background: var(--color-medio);
+  color: white;
+}
+
+#name{
+  text-transform: capitalize;
+}

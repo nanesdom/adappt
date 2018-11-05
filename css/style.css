@@ -1,0 +1,130 @@
+@import url(index.css);
+@import url(dashboard.css);
+@import url(visual.css);
+@import url(texto.css);
+@import url(nuevo.css);
+@import url(video.css);
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+    outline: none;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Didact Gothic', sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-fuerte);
+  opacity: 0;
+  transition: 2s opacity;
+}
+
+:root{
+  --color-fondo: #f5f6fa;
+  --color-fuerte: #2f3640;
+  --color-medio: #40739e;
+  --color-contraste: #e1b12c;
+  --color-contraste2: #e84393;
+
+  --color-error: #e84118;
+  --color-bien: #4cd137;
+}
+
+.cont{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+header{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  z-index: 99999;
+  color: white;
+  line-height: 30px !important;
+  font-size: 1.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+header img{
+  width: 40px;
+  height: 40px;
+}
+
+header b{
+  font-weight: lighter;
+  line-height: 50px;
+  text-align: center;
+  margin-right: 10px;
+
+}
+
+header .right{
+  float: right;
+    margin-left: 50px;
+}
+
+header .right:hover{
+  color: var(--color-contraste);
+}
+
+.hola1, .hola2, .hola3, .hola4{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  color: var(--color-fondo);
+  left: calc(50% - 150px);
+  border: 1px solid var(--color-fondo);
+  text-align: center;
+  line-height: 300px;
+  font-size: 3em;
+}
+
+.hola1{
+  background: var(--color-fuerte);
+  top: 50px;
+}
+.hola2{
+  background: var(--color-medio);
+  top: 350px;
+}
+.hola3{
+  background: var(--color-contraste);
+  top: 650px;
+}
+.hola4{
+  background: var(--color-contraste2);
+  top: 950px;
+}
+
+#mensaje, #mensaje2{
+    width: 100%;
+    height: 80px; 
+    color: white;
+    position: fixed;
+    top: -80px;
+    left: 0px;
+    line-height: 80px;
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;  
+    z-index: 999999999999999999999999999999;
+  }
+
+  #mensaje{
+    background: #e74c3c;
+  }
+
+  #mensaje2{
+    background: green;
+  }
